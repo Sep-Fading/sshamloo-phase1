@@ -1,0 +1,85 @@
+@import url(./main-styles.css);
+
+/* Overall Layout */
+.page-container{
+    display: grid;
+    grid-template-columns: [first] 100% [line2];
+    grid-template-rows: [row1-start] 15% [row1-end row2-start] 45% [row2-end row3-start] 35% [row3-end row4-start] 15% [row4-end];
+}
+
+footer{
+    grid-row-start: row4-start;
+    grid-row-end: row4-end;
+}
+
+/* Stop header animation */
+.header-container {
+    animation: noAnim ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes noAnim {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Experience blocks */
+.experience-content-container{
+    display: grid;
+    margin-inline: 2em;
+    margin-block: 1vh;
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.exp-class{
+    padding: 2em;
+    background-color: var(--clr-anti-flash-white);
+    margin-bottom: 3em;
+
+    border-radius: 2em;
+}
+
+.exp-container{
+    display: flex;
+    flex: row;
+    flex-wrap: nowrap;
+    margin-top: 2em;
+}
+
+.exp-image img{
+    width: 30vw;
+    margin-right: 3em;
+    border-radius: 2em;
+}
+
+.exp-image-2 img{
+    width: 20vw;
+    margin-right: 3em;
+    border-radius: 2em;
+}
+
+/* View for yourself button */
+.exp-button{
+    margin-top: 0.25em;
+}
+.exp-button a{
+    border-radius: 2em;
+    font-family: var(--main-font);
+    color: var(--clr-raising-black);
+    text-decoration: underline;
+    transition: all 0.4s ease-in-out;
+    font-weight: 400;
+}
+
+/* Learn more button animations */
+.exp-button a:hover {
+    color: var(--clr-tangerine);
+}

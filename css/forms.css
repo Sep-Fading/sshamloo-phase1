@@ -1,0 +1,116 @@
+@import url(experience-styles.css);
+
+/* form layout */
+.form-wrapper, .login-form-wrapper{
+    justify-self: center;
+    justify-content: flex-start;
+    grid-row-start: row2-start;
+    grid-row-end: row3-end;
+    border-radius: 1em;
+    border: solid 3pt var(--clr-cream);
+    margin-top: 100px;
+    margin-right: 25px;
+    padding: 1em;
+    height: 60vh;
+}
+
+/* form styles */
+legend{
+    font-size: 1.5vw;
+    font-family: var(--main-font);
+    font-weight: 500;
+    color: var(--clr-anti-flash-white);
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+label{
+    font-size: 1vw;
+    font-family: var(--main-font);
+    font-weight: 500;
+    color: var(--clr-anti-flash-white);
+    text-transform: capitalize;
+    line-height: 2em;
+}
+
+#blog-title{
+    font-family: var(--subtext-font);
+    border-radius: 2em;
+    padding-inline: 1em;
+    width: 15vw;
+    height: 3vh;
+}
+
+#blog-content{
+    font-family: var(--subtext-font);
+    border-radius: 2em;
+    padding-inline: 1em;
+    padding-block: 1em;
+    width: 40vw;
+    height: 30vh;
+}
+
+/* form buttons */
+.form-buttons{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: flex-start;
+   gap: 1em;
+   margin-top: 2em;
+}
+
+.submit-post, .cancel-post{
+    width: 15vw;
+    height: 5vh;
+    border-radius: 2em;
+    font-family: var(--main-font);
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    color: var(--clr-raisin-black);
+    background-color: var(--clr-cream);
+}
+
+.cancel-post:hover, .submit-post:hover{
+    color: var(--clr-anti-flash-white);
+    background-color: var(--clr-tangerine);
+}
+
+
+/* LOGIN FORM STYLES */
+.login-form-wrapper{
+    height: 40vh;
+}
+
+.login-form-wrapper form label{
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.login-form-wrapper .form-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+#email-login, #pass-login{
+    width: 20vw;
+    height: 3vh;
+    border-radius: 2em;
+    padding-inline: 1em;
+}
+
+.login-page-login-button{
+    width: 22vw;
+    height: 5vh;
+    border-radius: 2em;
+    color: var(--clr-anti-flash-white);
+    background-color: var(--clr-tangerine);
+    transition: all 1s ease-in-out;
+}
+
+.login-page-login-button:hover{
+    color: var(--clr-raisin-black);
+    background-color: var(--clr-cream);
+}
