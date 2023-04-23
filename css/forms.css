@@ -6,8 +6,6 @@
     justify-content: flex-start;
     grid-row-start: row2-start;
     grid-row-end: row3-end;
-    border-radius: 1em;
-    border: solid 3pt var(--clr-cream);
     margin-top: 100px;
     margin-right: 25px;
     padding: 1em;
@@ -16,12 +14,13 @@
 
 /* form styles */
 legend{
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     font-family: var(--main-font);
-    font-weight: 500;
+    font-weight: 700;
     color: var(--clr-anti-flash-white);
     text-transform: uppercase;
     margin-bottom: 1em;
+    justify-self: center;
 }
 
 label{
@@ -79,7 +78,8 @@ label{
 
 /* LOGIN FORM STYLES */
 .login-form-wrapper{
-    height: 40vh;
+    max-height: 45vh;
+    max-width: 40vh;
 }
 
 .login-form-wrapper form label{
@@ -89,20 +89,23 @@ label{
     margin-top: 2em;
 }
 
-.login-form-wrapper .form-buttons{
+.login-form-wrapper, .form-buttons{
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
 #email-login, #pass-login{
-    width: 20vw;
-    height: 3vh;
+    width: 14.5vw;
+    height: 4vh;
     border-radius: 2em;
-    padding-inline: 1em;
+    border-style: none;
+    text-align: center;
+    margin-left: 1.15vw;
 }
 
 .login-page-login-button{
-    width: 22vw;
+    width: 15vw;
     height: 5vh;
     border-radius: 2em;
     color: var(--clr-anti-flash-white);
@@ -113,4 +116,5 @@ label{
 .login-page-login-button:hover{
     color: var(--clr-raisin-black);
     background-color: var(--clr-cream);
+    cursor: pointer;
 }
